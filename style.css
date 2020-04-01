@@ -1,0 +1,360 @@
+/********************************************
+Tag Resets
+********************************************/
+
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/*GENERAL*/
+
+body {
+  position: relative;
+  font-family: "aktiv-grotesk-std", sans-serif;
+  background: #FFF;
+}
+a {
+  width: calc(50% - 2em);
+}
+*,
+:after,
+:before {
+box-sizing: border-box;
+}
+
+.wrapper {
+  width:100%;
+  display: -webkit-box;
+  display: -moz-box;  
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+a {
+  color: #40f8b1;
+  text-decoration: none;
+}
+
+a:visited{
+  color:#000;
+}
+
+a:hover {
+  color: #7EEDE1;
+}
+a.camp {
+  color: #000;
+}
+a.camp:hover {
+  color: #95F0CB;
+}
+a.cuthbert {
+  color: #000;
+}
+a.cuthbert:hover {
+  color: #7BECE3;
+}
+
+/*NAVBAR*/
+
+#logo {
+  height: 95px;
+  width: 274px;
+}
+
+.topnav {
+  height: 95px;
+  width: 100%;
+  margin-bottom: 30px;
+  background: #FFF;
+  box-shadow: 0 2px 3px 0 rgba(158,158,158,.15);
+  text-align: center;
+}
+
+/*CARDS*/
+
+.card-wrapper {
+  width: 100%;
+  margin-bottom: 10%;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  min-height: 580px;
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  -o-perspective: 800px;
+  perspective: 800px;
+}
+
+.card {
+  padding: 0;
+  width: 100%;
+  height: 547px;
+  margin: 0 auto;
+  position: absolute;
+  -webkit-transition: -webkit-transform 1s;
+  -moz-transition: -moz-transform 1s;
+  -o-transition: -o-transform 1s;
+  transition: transform 1s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.card figure {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+figure {
+  margin:0;
+}
+
+.back {
+  position: relative;
+}
+
+.card .front {
+  position: relative;
+  -ms-transform: rotateY( 180deg ); /* IE 9 */
+  -webkit-transform: rotateY( 180deg ); /* Chrome, Safari, Opera */
+  transform: rotateY( 180deg );
+}
+
+.card.flipped {
+  -ms-transform: rotateY( 180deg ); /* IE 9 */
+  -webkit-transform: rotateY( 180deg ); /* Chrome, Safari, Opera */
+  transform: rotateY( 180deg );
+}
+
+.front img, .back img {
+  width: 320px;
+  height: 527px;
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.35);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.35);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.35);
+}
+
+/*DESCRIPTION AREA*/
+
+.greeting {
+  line-height: 2em;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.greeting img {
+  margin-top: 15px;
+}
+
+h1 {
+  text-transform: uppercase;
+  color: #40f8b1;
+}
+
+.description-wrapper {
+  width: 100%;
+  padding: 0 0 60px 0;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.greeting {
+  width: 320px;
+  height: 100%;
+}
+
+.description p{
+  width: 75%;
+  display: inline-block;
+  line-height: 1.4em;
+  padding: 10px 0;
+}
+
+.name h2 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  color: #40f8b1;
+  letter-spacing: 2px;
+}
+
+.arcana-icon, .name, .description {
+  width: 100%;
+  height: 100%;
+}
+
+.fateButton:focus {
+  outline: none;
+}
+
+.rotate {
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+}
+
+.reversed {
+  font-weight: bold;
+}
+
+footer {
+  width: 100%;
+  box-shadow: 2px 0 3px 0 rgba(158,158,158,.15);
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 13px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 30px 20px 20px 20px;
+  display: inline-block;
+}
+
+.logoicon {
+  width: 35px;
+  margin: 20px 0px;
+  vertical-align: top
+}
+
+.site {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.site-content {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.aligner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 768px) {
+
+.wrapper {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  margin-bottom: 10%;
+  text-align:left;
+  margin: 0 auto;
+}
+
+.card-wrapper {
+  width: 50%;
+  min-height: 580px;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  -o-perspective: 800px;
+  perspective: 800px;
+}
+
+.description-wrapper {
+  width: 50%;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+footer {
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+}
+}
+
+@media (min-width: 1224px) {
+.wrapper {
+  width: 65%;
+}
+}

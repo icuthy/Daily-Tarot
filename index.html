@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="THE DAILY TAROT" />
+  <meta property="og:site_name" content="The Daily Tarot"/>
+  <meta property="og:url" content="http://www.thedailytarot.com" />
+  <meta property="og:description" content="What's yours?" />
+  <meta property="fb:app_id" content="937580106306543" />
+  <meta property="og:image" content="http://www.thedailytarot.com/images/tarotforFB.png">
+  <meta property="og:type" content="article" />
+
+  <title>Daily Tarot</title>
+  <script src="//use.typekit.net/mxj1mxm.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="site">
+   <!--share button functionality-->
+   <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "http://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=937580106306543";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+<main class="site-content">
+
+  <nav class="topnav">
+      <img src="images/tarotlogo.svg" id="logo" alt="Daily Tarot">
+  </nav>
+  <div class="wrapper">
+    <div class="card-wrapper">
+      <section class="card">
+        <figure class="back">
+          <!--card face down-->
+            <img src="images/tarotback.svg" class="fateButton" alt="tarot card back">
+        </figure>
+        <figure class="front fateButton">
+          <!--card face up-->
+        </figure>
+      </section>
+    </div>    <!-- end card wrapper -->
+
+    <div class="description-wrapper">
+      <section class="greeting">
+        <h1>fate awaits</h1>
+        <p>
+          Click the card to reveal your truth.
+        </p>
+        <img src="images/hand.svg" alt="hand icon">
+      </section>
+    <div class="card-details aligner">
+      <section class="arcana-icon"></section>
+
+      <section class="name"></section>
+
+      <section class="description"></section>
+    </div>
+    </div>     <!-- end description-wrapper aligner -->
+  </div>
+
+</main>
+<footer>
+  <img src="images/logoicon.svg" class="logoicon">
+  <p>
+    Created by <a href="http://brianacamp.github.io" target="_blank" class="camp">Camp</a> and <a href="http://www.ingdidit.com" target="_blank" class="cuthbert">Cuthbert</a>
+  </p>
+   <p>
+    Tarot Description &amp; Illustration &#58; <a href= "http://en.wikipedia.org/wiki/Rider-Waite_tarot_deck" target="_blank">Rider&nbspWaite</a>
+  </p>
+
+   <p class="fb-share-button" data-href="http://www.thedailytarot.com" data-layout="button"></p>
+
+</footer>
+<!--Google analytics-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-65156514-1', 'auto');
+  ga('send', 'pageview');
+</script>
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/cards.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
