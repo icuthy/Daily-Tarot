@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <title>Daily Tarot</title>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta property="og:title" content="THE DAILY TAROT" />
   <meta property="og:site_name" content="The Daily Tarot"/>
-  <meta property="og:url" content="http://www.thedailytarot.com" />
+  <meta property="og:url" content="https://ingdidit.com/dailytarot" />
   <meta property="og:description" content="What's yours?" />
   <meta property="fb:app_id" content="937580106306543" />
-  <meta property="og:image" content="http://www.thedailytarot.com/images/tarotforFB.png">
+  <meta property="og:image" content="https://ingdidit.com/dailytarot/images/tarotforFB.png">
   <meta property="og:type" content="article" />
 
-  <title>Daily Tarot</title>
+  <!-- fonts -->
   <script src="//use.typekit.net/mxj1mxm.js"></script>
   <script>try{Typekit.load();}catch(e){}</script>
-  <link rel="stylesheet" href="style.css">
 
+  <!-- sharethis script for social media sharing buttons -->
+  <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5e8525af5dfff80012eb48df&product=inline-share-buttons" async="async"></script>
+  
+  <link rel="stylesheet" href="style.css">
 </head>
 <body class="site">
-   <!--share button functionality-->
-   <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "http://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=937580106306543";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-    </script>
+  <!-- Load Facebook SDK for JavaScript -->
+  <!-- <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script> -->
 
 <main class="site-content">
 
@@ -62,7 +67,8 @@
 
       <section class="description"></section>
     </div>
-    </div>     <!-- end description-wrapper aligner -->
+    </div>     
+    <!-- end description-wrapper aligner -->
   </div>
 
 </main>
@@ -74,12 +80,12 @@
    <p>
     Tarot Description &amp; Illustration &#58; <a href= "http://en.wikipedia.org/wiki/Rider-Waite_tarot_deck" target="_blank">Rider&nbspWaite</a>
   </p>
-
-   <p class="fb-share-button" data-href="http://www.thedailytarot.com" data-layout="button"></p>
+  <p class="sharethis-inline-share-buttons"></p>
+   <!-- <p class="fb-share-button" data-href="https://ingdidit.com/dailytarot/" data-layout="button"></p> -->
 
 </footer>
 <!--Google analytics-->
-<script>
+<!-- <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -87,7 +93,7 @@
 
   ga('create', 'UA-65156514-1', 'auto');
   ga('send', 'pageview');
-</script>
+</script> -->
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/cards.js"></script>
   <script src="js/script.js"></script>
